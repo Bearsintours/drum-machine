@@ -1,38 +1,56 @@
-.App {
+body {
+  background: #909497;
+  border: 5px solid #F39C12;
+  font: 700 16px 'palatino';
+  max-width: 800px;
+  margin: 5% auto;
+}
+
+#drum-machine {
+  background: #D7DBDD;
+  margin: auto;
+  padding: 20px;
+}
+
+#display {
+  background: #909497;
+  margin: auto;
+  padding: 10px 0;
   text-align: center;
+  width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#drum {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.drum-pad {
+  background: #909497;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.8);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 0 0 28%;
+  height: 100px;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.drum-pad:active {
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.8);
+  -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.8);
+  box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.8);
+  transform: translateY(3px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clip {
+  height: 100%;
+  width: 100%;
 }
